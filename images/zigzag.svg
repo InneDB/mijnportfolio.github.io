@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolatiemodus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.78 100.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #006eff;
+        stroke-width: 8.94px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="5.53 2.38 16.29 19.47 5.44 35.43 16.29 50.81 5.53 65.63 16.29 83.1 5.24 98.1"/>
+</svg>
