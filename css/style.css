@@ -480,6 +480,10 @@ footer img{
     border-radius: 20px; 
 }
 
+/*footer*/
+.quicklinks a{
+    padding: 1em;
+}
 
 @media (min-width: 900px){
     .buttons{
@@ -523,8 +527,9 @@ footer img{
     }
     footer{
         display: flex;
-        gap: 5em;
+        gap: 2em;
         position: relative;
+        padding: 2em 2em;
     }
     .quicklinks a{
         display: block;
@@ -641,4 +646,13 @@ footer img{
         right: 2.8em;
         max-width: 30%;
     }
+}
+
+.constructie img{
+    width: 400px;
+    
+}
+.constructie {
+    text-align: center;
+    padding-top: 8em;
 }
