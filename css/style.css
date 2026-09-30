@@ -404,6 +404,48 @@ footer img{
     width: 50%;
 }
 
+#cirkel,
+#cirkel-contact,
+#cirkel-detail {
+    animation: circle-pulse 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+#zigzag,
+#zigzag-contact,
+#zigzag-detail {
+    animation: zigzag-wiggle 1.2s ease-in-out infinite;
+}
+
+@keyframes circle-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+@keyframes zigzag-wiggle {
+    0%, 100% {
+        rotate: -5deg;
+    }
+    50% {
+        rotate: 5deg;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #cirkel,
+    #cirkel-contact,
+    #cirkel-detail,
+    #zigzag,
+    #zigzag-contact,
+    #zigzag-detail {
+        animation: none;
+    }
+}
+
 
 .detail > p,
 .detail > div > p {
@@ -655,4 +697,36 @@ footer img{
 .constructie {
     text-align: center;
     padding-top: 8em;
+}
+
+@media (max-width: 899px) {
+    #cirkel {
+        width: 6em;
+        left: -1em;
+    }
+
+    #zigzag {
+        width: 3.5em;
+        right: -1em;
+    }
+
+    #cirkel-contact {
+        width: 18%;
+        right: -1em;
+    }
+
+    #zigzag-contact {
+        width: 18%;
+        left: -1em;
+    }
+
+    #cirkel-detail {
+        width: 14%;
+        left: -1em;
+    }
+
+    #zigzag-detail {
+        width: 28%;
+        right: -1em;
+    }
 }
