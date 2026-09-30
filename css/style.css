@@ -82,7 +82,7 @@ nav a:hover{
 
 .hero h2{
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.5em;
     font-weight: 400;
     text-decoration: underline solid #FF13BC 4px;
     text-underline-offset: 6px;
@@ -128,7 +128,7 @@ nav a:hover{
     padding: 4em 0;
     max-width: 100%;
     display: flex;
-    gap: 1.6em;
+    gap: 1em;
 }
 
 .btn {
