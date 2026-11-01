@@ -515,6 +515,8 @@ footer img{
     padding-top: 2em;
 }
 
+
+
 .img-grid {
    display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -799,6 +801,38 @@ footer img{
         top: -0.6em;
         right: 2.8em;
         max-width: 30%;
+    }
+
+    .vorig-btn {
+    color: var(--colorBlack);
+    border: 2px solid var(--colorYellow);
+    padding: 0.8em 1.5em;
+    }
+    .vorig-btn:hover {
+        color: var(--colorWhite);
+        background-color: var(--colorYellow);
+    }
+
+    .volgend-btn {
+        color: var(--colorWhite);
+        background-color: var(--colorBlue);
+        border: 2px solid var(--colorBlue);
+        padding: 0.8em 1.5em;
+    }
+
+    .volgend-btn:hover {
+        color: var(--colorBlack);
+        background-color: var(--colorWhite);
+    }
+
+    .detail .next-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        border-top: 2px solid #d3d3d3;
+        padding: 3em 0 6em 0;
+        margin-top: 4em;
     }
 }
 
