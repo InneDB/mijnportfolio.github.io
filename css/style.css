@@ -834,6 +834,27 @@ footer img{
         padding: 3em 0 6em 0;
         margin-top: 4em;
     }
+    .detail .concept-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:  0 4em;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    }
+
+    .detail .concept-items > div {
+        max-width: none;
+    }
+
+    .concept-items p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .concept-items h3 {
+        letter-spacing: 2.5px;
+    }
 }
 
 .constructie img{
