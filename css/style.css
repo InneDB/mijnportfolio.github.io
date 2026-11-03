@@ -633,240 +633,436 @@ footer img{
   margin-top: 0;
 }
 
-@media (min-width: 900px){
-    .buttons{
-        display: flex;
-        justify-content: flex-start;
-        gap: 1em;
-        padding: 2.2em 0;
-    }
-    .skillset {
-        display: grid;    
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .projecten-container {
-        grid-template-columns: repeat(2,1fr);
-    }
-    .hero {
-        display: flex;
-    }
-    .hero h1{
-        font-size: 2.8em;
-    }
-    .slider {
-        display: none;
-    }
-    .hamburger {
-        display: none;
-    }
-    .topnav {
-        display: contents;  
-    }
-    nav {
-        text-align: center;
-    }
-    nav a{
-        text-decoration: none;
-        padding: 1em 3em;
-        display: inline;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        padding: 2em 2em;
-    }
-    footer{
-        display: flex;
-        gap: 2em;
-        position: relative;
-        padding: 2em 2em;
-    }
-    .quicklinks a{
-        display: block;
-        text-align: left;
-        padding: 0.5em 0;
-    }
-    .pinkblock {
-        background-color: var(--colorPink);
-        width: 140px;
-        height: 420px;
-        position: absolute;
-        bottom: -3em;
-        right: 4em;
-        margin-bottom: 0;
-    }
-
-    /* contact pagina*/
-    .hero-text-contact {
-        max-width: 50%;
-    }
-
-    /* detail pagina*/
-    .img-detail img {
-        max-width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    #cirkel-detail {
-        bottom: -2em;
-        left: 1.2em;
-        max-width: 15%;
-    }
-    #zigzag-detail {
-        top: -0.2em;
-        right: -1.8em;
-        max-width: 40%;
-    }
-    .img-detail {
-        padding: 2em 0;
-    }
-    .detail div {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-    }
-    .intro {
-        padding-top: 4em;
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-    }
-}
-
-@media (min-width: 1440px){
-    body {
-        padding: 2em 6em
-    }
-    .opleiding-timeline {
-        width: fit-content;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5em;
-        margin-bottom: 10em;
-    }
-    .skillset {   
-        grid-template-columns: repeat(6, 1fr);
-        gap: 3em;
-    }
-    .projecten-container {
-        grid-template-columns: repeat(3,1fr);
-    }
-    .hero{
-        padding-top: 6em;
-        display:grid;
-        grid-template-columns: 3fr 2fr;
-    }
-    .hero-img {
-        right: -6em;
-        position: relative;
-    }
-    #zigzag{
-        right: 7.1em;
-    }
-    .hero h1{
-        font-size: 3.6em;
-    }
-    .hero-img img{
-        max-width: 70%;
-    }
-    footer{
-        gap: 10em;
-    }
-    nav a{
-        font-weight: 600;
-    }
-
-    /* contact pagina*/
-    .hero-text-contact {
-        max-width: 100%;
-    }
-    #cirkel-contact {
-        top: -4em;
-        right: -4.5em;
-    }
-    .contactgegevens img {
-        max-width: 6%;
-    }
-    #zigzag-contact {
-    bottom: -6em;
-    width: 12%;
-}
-
-    /*detail pagina*/
-    #cirkel-detail {
-        bottom: -3em;
-        left: 1em;
-        max-width: 15%;
-    }
-    #zigzag-detail {
-        top: -0.6em;
-        right: 2.8em;
-        max-width: 30%;
-    }
-
-    .vorig-btn {
-    color: var(--colorBlack);
-    border: 2px solid var(--colorYellow);
-    padding: 0.8em 1.5em;
-    }
-    .vorig-btn:hover {
-        color: var(--colorWhite);
-        background-color: var(--colorYellow);
-    }
-
-    .volgend-btn {
-        color: var(--colorWhite);
-        background-color: var(--colorBlue);
-        border: 2px solid var(--colorBlue);
-        padding: 0.8em 1.5em;
-    }
-
-    .volgend-btn:hover {
-        color: var(--colorBlack);
-        background-color: var(--colorWhite);
-    }
-
-    .detail .next-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1em;
-        border-top: 2px solid #d3d3d3;
-        padding: 3em 0 6em 0;
-        margin-top: 4em;
-    }
-    .detail .concept-items {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap:  0 4em;
-    width: 100%;
-    max-width: none;
-    padding: 0;
-    }
-
-    .detail .concept-items > div {
-        max-width: none;
-    }
-
-    .concept-items p {
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
-
-    .concept-items h3 {
-        letter-spacing: 2.5px;
-    }
-}
-
 .constructie img{
     width: 400px;
-    
 }
 .constructie {
     text-align: center;
     padding-top: 8em;
 }
 
+/* Laptop and larger */
+body {
+    padding: 2em 6em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 2.2em 0;
+}
+
+.skillset {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3em;
+}
+
+.projecten-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hero {
+    padding-top: 6em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.hero-img {
+    right: -6em;
+}
+
+.hero-img img {
+    max-width: 70%;
+}
+
+.hero h1 {
+    font-size: 3.6em;
+}
+
+#zigzag {
+    right: 7.1em;
+}
+
+.slider,
+.hamburger {
+    display: none;
+}
+
+.topnav {
+    display: contents;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 2em;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    gap: 10em;
+    position: relative;
+    padding: 2em;
+}
+
+.quicklinks a {
+    display: block;
+    text-align: left;
+    padding: 0.5em 0;
+}
+
+.pinkblock {
+    background-color: var(--colorPink);
+    width: 140px;
+    height: 420px;
+    position: absolute;
+    bottom: -3em;
+    right: 4em;
+    margin-bottom: 0;
+}
+
+.opleiding-timeline {
+    width: fit-content;
+    max-width: 100%;
+    margin: 5em auto 10em;
+}
+
+.hero-text-contact {
+    max-width: 100%;
+}
+
+#cirkel-contact {
+    top: -4em;
+    right: -4.5em;
+}
+
+.contactgegevens img {
+    max-width: 6%;
+}
+
+#zigzag-contact {
+    bottom: -6em;
+    width: 12%;
+}
+
+.img-detail img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-detail {
+    padding: 2em 0;
+}
+
+#cirkel-detail {
+    bottom: -3em;
+    left: 1em;
+    max-width: 15%;
+}
+
+#zigzag-detail {
+    top: -0.6em;
+    right: 2.8em;
+    max-width: 30%;
+}
+
+.detail div {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.intro {
+    padding-top: 4em;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.vorig-btn {
+    color: var(--colorBlack);
+    border: 2px solid var(--colorYellow);
+    padding: 0.8em 1.5em;
+}
+
+.vorig-btn:hover {
+    color: var(--colorWhite);
+    background-color: var(--colorYellow);
+}
+
+.volgend-btn {
+    color: var(--colorWhite);
+    background-color: var(--colorBlue);
+    border: 2px solid var(--colorBlue);
+    padding: 0.8em 1.5em;
+}
+
+.volgend-btn:hover {
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+
+.detail .next-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    border-top: 2px solid #d3d3d3;
+    padding: 3em 0 6em;
+    margin-top: 4em;
+}
+
+.detail .concept-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 4em;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.detail .concept-items > div {
+    max-width: none;
+}
+
+.concept-items p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.concept-items h3 {
+    letter-spacing: 2.5px;
+}
+
+/* Medium screens */
+@media (max-width: 1439px) {
+    body {
+        padding: 2em 2.5em;
+    }
+
+    .skillset {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projecten-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding-top: 4em;
+        display: flex;
+    }
+
+    .hero-img {
+        right: auto;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    #zigzag {
+        right: -2.5em;
+    }
+
+    nav a {
+        font-weight: normal;
+    }
+
+    footer {
+        gap: 2em;
+    }
+
+    .opleiding-timeline {
+        width: auto;
+        margin: 3em 0 0 2rem;
+    }
+
+    .hero-text-contact {
+        max-width: 50%;
+    }
+
+    #cirkel-contact {
+        top: -2.8em;
+        right: -2.5em;
+    }
+
+    .contactgegevens img {
+        max-width: 12%;
+    }
+
+    #zigzag-contact {
+        bottom: -4em;
+        width: auto;
+    }
+
+    #cirkel-detail {
+        bottom: -2em;
+        left: 1.2em;
+        max-width: 15%;
+    }
+
+    #zigzag-detail {
+        top: -0.2em;
+        right: -1.8em;
+        max-width: 40%;
+    }
+
+    .detail .next-buttons {
+        display: block;
+        border-top: none;
+        padding: 2em 0 0;
+        margin-top: 0;
+    }
+
+    .detail .concept-items {
+        display: block;
+        grid-template-columns: none;
+        gap: normal;
+        width: auto;
+        max-width: 80%;
+        padding: 2em 0 0;
+    }
+
+    .detail .concept-items > div {
+        max-width: 80%;
+    }
+
+    .concept-items h3 {
+        letter-spacing: normal;
+    }
+}
+
 @media (max-width: 899px) {
+
+    .buttons {
+        justify-content: center;
+        gap: 0.8em;
+        padding: 4em 0;
+    }
+
+    .skillset {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projecten-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero {
+        display: block;
+        grid-template-columns: none;
+    }
+
+    .hero h1 {
+        font-size: 3.6em;
+    }
+
+    .slider,
+    .hamburger {
+        display: block;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        text-align: right;
+        text-transform: none;
+        letter-spacing: normal;
+        padding: 1em 3em;
+        font-weight: normal;
+    }
+
+    footer {
+        display: block;
+        gap: normal;
+        position: static;
+        padding: 0;
+    }
+
+    .quicklinks a {
+        display: inline;
+        text-align: initial;
+        padding: 1em;
+    }
+
+    .pinkblock {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        position: static;
+        bottom: auto;
+        right: auto;
+    }
+
+    .opleiding-timeline {
+        width: auto;
+        margin: 3em 0 0 2rem;
+    }
+
+    .hero-text-contact {
+        max-width: none;
+    }
+
+    #cirkel-contact {
+        width: 18%;
+        right: -1em;
+    }
+
+    #zigzag-contact {
+        bottom: -4em;
+        width: 18%;
+        left: -1em;
+    }
+
+    .img-detail img {
+        max-width: 100%;
+        display: inline;
+        margin: 0;
+    }
+
+    .img-detail {
+        padding: 0;
+    }
+
+    .detail div {
+        margin: 0;
+        max-width: none;
+    }
+
+    .intro {
+        padding-top: 2em;
+        margin: 0;
+        max-width: none;
+    }
+
+    .detail .concept-items {
+        max-width: none;
+    }
+
+    .detail .concept-items > div {
+        max-width: none;
+    }
+
+    .concept-items h3 {
+        letter-spacing: normal;
+    }
+
     #cirkel {
         width: 6em;
         left: -1em;
@@ -890,10 +1086,14 @@ footer img{
     #cirkel-detail {
         width: 14%;
         left: -1em;
+        bottom: -1em;
+        max-width: none;
     }
 
     #zigzag-detail {
         width: 28%;
         right: -1em;
+        top: -1.2em;
+        max-width: none;
     }
 }
